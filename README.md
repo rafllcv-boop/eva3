@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Veloura Admin - Gestor de Inventario de Maquillaje 💄
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una Single Page Application (SPA) desarrollada con **React.js** para la Evaluación 3. Permite gestionar un inventario de productos de maquillaje mediante operaciones CRUD, persistiendo los datos de manera segura en el Local Storage del navegador y consumiendo una API externa para mostrar tendencias de belleza.
 
-## Available Scripts
+## 🚀 Requisitos Previos
 
-In the project directory, you can run:
+Asegúrate de tener instalado en tu sistema:
+- [Node.js](https://nodejs.org/) (Versión 14 o superior)
+- npm (Gestor de paquetes, incluido con Node.js)
 
-### `npm start`
+## 🛠️ Instalación y Configuración
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Sigue estos comandos en tu terminal para ejecutar el proyecto sin errores:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Abre la terminal en la carpeta del proyecto**
+   Asegúrate de estar ubicado en la raíz del proyecto (la carpeta que contiene el archivo `package.json`).
 
-### `npm test`
+2. **Instalar las dependencias**
+   Ejecuta el siguiente comando para descargar React, Bootstrap y todas las librerías necesarias:
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Levantar el entorno de desarrollo**
+   Una vez que termine la instalación, arranca el servidor local ejecutando:
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+4. **Ver la aplicación**
+   El comando anterior abrirá automáticamente una pestaña en tu navegador en `http://localhost:3000`. Si no ocurre, puedes ingresar manualmente a ese enlace.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Funcionalidades Principales
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **CRUD Completo:** Creación, lectura, actualización y eliminación de productos de maquillaje.
+- **Local Storage:** Persistencia de datos local mediante el uso de un Custom Hook (`useLocalStorage`).
+- **Consumo de API con Fetch:** Obtención de datos aleatorios desde `dummyjson.com/products/category/beauty` al cargar la página, demostrando uso avanzado de asincronía (`async/await`), manejo de errores (`try/catch`) y estados de carga.
+- **Validaciones Rigurosas:** Prevención de envíos vacíos, verificación de categorías, precios en formato chileno y sanitización básica de texto (trimming).
+- **Diseño Responsive:** Interfaz moderna y adaptable construida con **Bootstrap 5**, aplicando una temática "Premium" basada en colores Rojo, Negro y Blanco.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🤖 Uso de Inteligencia Artificial
+El documento que certifica el uso, validación e identificación de componentes de React mediante la asistencia de Inteligencia Artificial se encuentra en el archivo:
+👉 **`PROMPTS.md`**
