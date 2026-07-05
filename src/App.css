@@ -1,22 +1,19 @@
-/* Estilos base para Veloura Admin */
 body {
-  background-color: #f8f9fa; /* Bootstrap light */
+  background-color: #f8f9fa;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Tipografía elegante */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: -0.5px;
 }
 
-/* Colores personalizados que complementan Bootstrap */
 .text-danger {
-  color: #dc3545 !important; /* Rojo Premium */
+  color: #dc3545 !important;
 }
 
 .bg-dark {
-  background-color: #121212 !important; /* Negro Profundo */
+  background-color: #121212 !important;
 }
 
 .bg-danger {
