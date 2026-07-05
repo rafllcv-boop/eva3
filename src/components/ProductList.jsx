@@ -32,7 +32,7 @@ const ProductList = ({ products, deleteProduct, setEditingProduct }) => {
               <td>
                 <span className="badge bg-secondary rounded-pill">{product.category}</span>
               </td>
-              <td>${product.price.toFixed(2)}</td>
+              <td>${product.price.toLocaleString('es-CL')}</td>
               <td>
                 <span className={`badge rounded-pill ${
                   product.stock > 10 ? 'bg-success' : 

@@ -132,12 +132,12 @@ const ProductForm = ({ addProduct, updateProduct, editingProduct, setEditingProd
                 <span className="input-group-text bg-light">$</span>
                 <input 
                   type="number" 
-                  step="0.01"
+                  step="1"
                   className={`form-control ${errors.price ? 'is-invalid' : ''}`}
                   name="price"
                   value={formData.price}
                   onChange={handleChange}
-                  placeholder="0.00"
+                  placeholder="0"
                 />
                 {errors.price && <div className="invalid-feedback">{errors.price}</div>}
               </div>
